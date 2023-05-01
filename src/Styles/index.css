@@ -1,0 +1,51 @@
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  height: 100vh;
+  background-color: hsl(180deg, 31%, 95%);
+}
+
+.job-body {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  width: 100%;
+  padding: 35px 40px;
+  border-radius: 5px;
+  border-left: 6px solid hsl(180deg, 29%, 50%);
+}
+.job-body .job-position {
+  margin: 0;
+}
+.job-body ul {
+  display: flex;
+  gap: 30px;
+  padding-left: 0;
+  margin: 0;
+}
+.job-body ul li {
+  list-style-type: none;
+}
+.job-body .job-info {
+  display: flex;
+  gap: 25px;
+}
+.job-body .job-info img {
+  aspect-ratio: 1;
+}
+.job-body .job-info .job-description {
+  display: flex;
+  flex-direction: column;
+}
+.job-body .job-tags {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  color: hsl(180deg, 29%, 50%);
+}
+.job-body .job-tags span {
+  background-color: hsl(180deg, 31%, 95%);
+  padding: 10px;
+  border-radius: 5px;
+}/*# sourceMappingURL=index.css.map */

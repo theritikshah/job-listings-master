@@ -1,0 +1,23 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+}
+
+header {
+  display: flex;
+  height: 0;
+  width: 100vw;
+  background-color: hsl(180deg, 29%, 50%);
+  background-image: url(../public/images/bg-header-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 10.8333333333%;
+}
+
+section {
+  display: flex;
+  justify-content: center;
+  background-color: hsl(180deg, 31%, 95%);
+  padding: 5% 13.3%;
+}/*# sourceMappingURL=App.module.css.map */

@@ -1,0 +1,111 @@
+@use "./Styles/_color" as *;
+
+.App {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 80px;
+    padding-bottom: 100px;
+
+}
+
+header {
+    display: flex;
+    height: 150px;
+    background-color: $Desaturated-Dark-Cyan;
+
+    width: 100%;
+    position: relative;
+
+    img {
+        object-fit: cover;
+    }
+
+    // background-color: $Desaturated-Dark-Cyan;
+    // background-image: url(../public/images/bg-header-desktop.svg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // padding-top: calc(156px / 1440px * 100%);
+
+
+    .filters {
+        box-sizing: border-box;
+        position: absolute;
+        background-color: white;
+        left: 75%;
+        transform: translateY(50%) translateX(calc(-83%));
+        display: flex;
+        align-items: center;
+
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 20px 30px;
+        border-radius: 6px;
+        width: calc(75%);
+        bottom: 0;
+        // min-height: 48%;
+
+    }
+
+    .clear {
+        color: $Very-Dark-Grayish-Cyan;
+        font-weight: bold;
+        margin-left: auto;
+        cursor: pointer;
+
+        &:hover {
+            color: $Desaturated-Dark-Cyan;
+            text-decoration: underline;
+        }
+    }
+
+
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    background-color: $Light-Grayish-Cyan;
+    // padding: 5% 13.3%;
+    width: 75%;
+
+    @media screen and (max-width: "768px") {
+        gap: 50px;
+        padding: 35px 35px;
+    }
+
+}
+
+.remove_button {
+    display: flex;
+    gap: 10px;
+    background-color: $Light-Grayish-Cyan;
+    color: $Desaturated-Dark-Cyan;
+    align-items: center;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 100%;
+
+    span {
+        padding: 8px 8px;
+        font-weight: bold;
+    }
+
+    button {
+        display: flex;
+        align-items: center;
+        height: 32px;
+        border: none;
+        padding: 0 8px;
+        background-color: $Desaturated-Dark-Cyan;
+        cursor: pointer;
+        transition: .2s;
+
+
+        &:hover {
+            background-color: $Very-Dark-Grayish-Cyan;
+        }
+    }
+}
